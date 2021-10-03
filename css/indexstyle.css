@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+body{
+    min-width: 280px;
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.screen-loaderdiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #fea055;
+    background: hsl(27, 99%, 66%);
+    background: rgb(254, 160, 82);
+    z-index: 4;
+}
+
+.screen-loaderdiv img{
+    width: 80px;
+    height: 80px;
+    -webkit-animation: appicon 0.6s ease infinite alternate;
+            animation: appicon 0.6s ease infinite alternate;
+}
+
+@-webkit-keyframes appicon{
+    from{
+        width: 80px;
+        height: 80px;
+    }
+
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@keyframes appicon{
+    from{
+        width: 80px;
+        height: 80px;
+    }
+
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.screenloader-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+header{
+    width: 89%;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 11%;
+    position: fixed;
+    left: 0px;
+    border-bottom: 3px solid #aaaaaa;
+    background: #fea055;
+    background: hsl(27, 99%, 66%);
+    background: rgb(254, 160, 82);
+    z-index: 2;
+}
+
+header #porfolio-icondiv img{
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+header nav ul{
+    width: 480px;
+    margin-top: -40px;
+    margin-left: 80px;
+    /* background: green; */
+}
+
+header nav ul li{
+    width: 80px;
+    color: #808080;
+    color: hsl(0, 0%, 50%);
+    color: rgb(128, 128, 128);
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    /* background: blue; */
+}
+
+header nav ul li:hover{
+    color: black;
+    color: #000000;
+    transition: 0.3s;
+    color: hsl(0, 0%, 0%);
+}
+
+header nav ul #projectbtn{
+    margin-left: 15px;
+}
+
+header nav ul #contactbtn{
+    margin-left: 25px;
+}
+
+header .header-contact-iconsdiv a:link{
+    color: black;
+    text-decoration: none;
+}
+
+header .header-contact-iconsdiv a:visited{
+    color: #ae745C;
+    color: #ae745C;
+    color: #ae745C;
+    border: #ae745C;
+    border: #ae745C;
+    border:#ae745C;
+}
+
+header .header-contact-iconsdiv{
+    width: 130px;
+    margin-top: -35px;
+    font-size: 20px;
+    position: absolute;
+    left: 79%;
+    /* background: green; */
+}
+
+header .header-contact-iconsdiv i{
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+header .header-contact-iconsdiv i:hover{
+    color: #ae745C;
+    color: #ae745C;
+    color: #ae745C;
+    transition: 0.3s;
+    border: 1px solid #ae745C;
+    border: 1px solid#ae745C;
+    border: 1px solid #ae745C;
+}
+
+header #menuicondiv{
+    display: none;
+}
+
+header #closemenudiv{
+    display: none;
+}
+
+.maincontent-container{
+    width: 80%;
+    /* height: 100%; */
+    /* height: 50vh; */
+    height: 1800px;
+    margin: 0px auto;
+    padding-top: 120px;
+    background: white;
+    z-index: -1;
+}
+
+.maincontent-container section{
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+
+.maincontent-container section img{
+    width: 350px;
+    height: 400px;
+    /* background: red; */
+}
+
+section .summarytitlediv{
+    width: 65%;
+    max-width: 1000px;
+    position: relative;
+    top: -330px;
+    left: 31.5%;
+    /* background: blue; */
+}
+
+section .summarytitlediv h3{
+    color: #ae745C;
+}
+
+section .summarytitlediv p{
+    color: #747474;
+}
+
+section .summarytitlediv .hirediv{
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: green; */
+}
+
+section .summarytitlediv .hirediv h4{
+    color: #ae745C;
+}
+
+section .summarytitlediv .hirediv p{
+    color: #747474;
+}
+
+section .summarytitlediv .hirediv button{
+    width: 171px;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px grey;
+    background: #ae745C;
+}
+
+section .summarytitlediv .hirediv button:hover{
+    box-shadow: none;
+    background: #997c6e;
+}
+
+section .summarytitlediv .hirediv button:active{
+    color: #ae745C;
+    border: 3px solid #ae745C;
+    background: white;
+}
+
+.summarytitlediv .hirediv .hirebtndiv{
+    margin-top: -40px;
+    float: right;
+}
+
+.maincontent-container #shape-one{
+    width: 350px;
+    height: 400px;
+    margin-top: -500px;
+    float: right;
+    z-index: -1;
+}
+
+.maincontent-container .jobsection {
+    position: relative;
+    /* background-color: blue; */
+    margin-top: -55px;
+}
+
+.maincontent-container .jobsection #shape-two {
+    position: absolute;
+    margin-top: -80px;
+}
+
+.jobsection .jobdescription-container {
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: yellow; */
+}
+
+.jobsection .jobdescription-container .desriptionbtnsdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.jobsection .jobdescription-container h2 {
+    color: #fea055;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.jobsection .jobdescription-container .desriptionbtnsdiv button {
+    width: 320px;
+    border: none;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    padding-bottom: 15px;
+    line-height: 18px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px grey;
+    z-index: 1;
+    background-color: #fea055;
+}
+
+.jobdescription-container .desriptionbtnsdiv h4 {
+    color: #747474;
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.jobdescription-container .desriptionbtnsdiv i {
+    color: #ae745c;
+    font-size: 18px;
+}
+
+.jobdescription-container .desriptionbtnsdiv p {
+    overflow: hidden;
+    letter-spacing: 0.6px;
+    /* background-color: red; */
+}
+
+.maincontent-container .jobsection #shape-three {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    color: white;
+    color: #ffffff;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding-top: 30px;
+    background: #ae745c;
+    background: hsl(18, 34%, 52%);
+    background: rgb(174, 116, 91);
+}
+
+@media(max-width: 950px){
+    .maincontent-container{
+        width: 100%;
+    }
+
+    header #menuicondiv{
+        width: 100%;
+        color: #808080;
+        color: hsl(0, 0%, 50%);
+        color: hsl(0, 0%, 50%);
+        margin: 0 auto;
+        cursor: default;
+        display: block;
+        margin-top: -60px;
+        font-size: 40px;
+        position: absolute;
+        left: 0px;
+        /* background: green; */
+        text-align: center;
+    }
+
+    header #menuicondiv i:hover{
+        color: black;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    header .header-contact-iconsdiv{
+        width: 130px;
+        margin-top: -50px!important;
+        position: absolute;
+        left: 75%;
+        /* background: green; */
+    }
+    
+    header nav{
+        display: block;
+    }
+
+    header nav ul{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 0px;
+        padding-top: 10px;
+        position: absolute;
+        left: 0px;
+        display: none;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background: #fea055;
+        background: hsl(27, 99%, 66%);
+        background: rgb(254, 160, 82);
+        z-index: 1;
+    }
+
+    header nav ul li{
+        width: 100%;
+        height: 40px;
+        margin: 0 auto;
+        display: block;
+        /* background-color: green; */
+    }
+
+    header nav ul #projectbtn{
+        margin-left: 0px;
+    }
+    
+    header nav ul #contactbtn{
+        margin-left: 0px;
+    }
+
+    header #closemenudiv{
+        width: 100%;
+        height: 50px;
+        color: #808080;
+        color: hsl(0, 0%, 50%);
+        color: hsl(0, 0%, 50%);
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        /* background: green; */
+    }
+
+    header #closemenudiv i{
+        cursor: pointer;
+    }
+
+    header #closemenudiv i:hover{
+        cursor: pointer;
+        color: black;
+        color: #000000;
+        color: hsl(0, 0%, 0%);
+        transition: 0.3s;
+    }
+
+    section .summarytitlediv{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: -400px;
+        left: 0;
+        text-align: center;
+        /* background-color: blue; */
+    }
+
+    .summarytitlediv p{
+        text-align: justify;
+    }
+
+    .summarytitlediv .hirediv p{
+        text-align: center;
+    }
+
+    .maincontent-container #shape-one{
+        width: 200px;
+        margin-top: -630px;
+        z-index: -1;
+    }
+
+    .maincontent-container section #devimage-one{
+        width: 100%;
+        position: relative;
+        top: 360px;
+        /* background-color: green; */
+    }
+
+    .summarytitlediv .hirediv .hirebtndiv{
+        margin-top: 30px;
+        float: none;
+    }
+
+    .maincontent-container .jobsection {
+        top: 150px;
+    }
+
+    .jobsection .jobdescription-container {
+        width: 70%;
+    }
+
+    .jobsection .jobdescription-container .desriptionbtnsdiv {
+        flex-direction: column;
+    }
+
+    .jobsection .jobdescription-container .desriptionbtnsdiv button {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        background-color: #fea055;
+    }
+
+    .maincontent-container .jobsection #shape-two, #shape-three{
+        width: 200px;
+    }
+}
+
+@media(max-width: 520px){
+    header .header-contact-iconsdiv{
+        left: 70%;
+        font-size: 16px;
+    }
+
+    header .header-contact-iconsdiv i{
+        padding: 6px;
+        margin-top: 4px!important;
+        /* background: green; */
+    }
+
+    .maincontent-container .jobsection #shape-three {
+        top: 400px;
+    }
+}
+
+@media(max-width: 440px){
+    header .header-contact-iconsdiv{
+        left: 70%;
+        display: none;
+        font-size: 16px;
+    }
+
+    section .summarytitlediv{
+        top: -330px;
+        /* background: blue; */
+    }
+
+    .maincontent-container section img{
+        height: 350px;
+        /* background: red; */
+    }
+
+    .maincontent-container section #devimage-one{
+        width: 100%;
+        top: 450px;
+        /* background-color: green; */
+    }
+
+    .maincontent-container .jobsection {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 400px){
+    section .summarytitlediv{
+        top: -280px;
+        /* background: blue; */
+    }
+
+    .maincontent-container #shape-one{
+        width: 150px;
+        margin-top: -720px;
+    }
+
+    .maincontent-container section img{
+        height: 280px;
+        /* background: red; */
+    }
+
+    .maincontent-container section #devimage-one{
+        top: 460px;
+        /* background-color: green; */
+    }
+}
+
+
+@media(max-width: 370px) {
+    .maincontent-container .jobsection {
+        margin-top: 10px;
+    }
+
+    .jobsection .jobdescription-container .desriptionbtnsdiv button {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 300px) {
+    .maincontent-container .jobsection {
+        margin-top: -30px;
+    }
+
+    .jobsection .jobdescription-container .desriptionbtnsdiv button {
+        width: 103%;
+    }
+
+    .maincontent-container .jobsection #shape-three {
+        top: 780px;
+    }
+}
+
+@media(max-width: 280px){
+    section .summarytitlediv{
+        top: -250px;
+        /* background: blue; */
+    }
+
+    section .summarytitlediv .hirediv h4{
+        width: 100%;
+        /* margin-top: 30px; */
+        /* background-color: green; */
+    }
+
+    .summarytitlediv .hirediv p{  
+        font-size: 12px;
+    }
+
+    .maincontent-container section img{
+        height: 250px;
+        /* background: red; */
+    }
+
+    .maincontent-container section #devimage-one{
+        top: 480px;
+    }
+}
