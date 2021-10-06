@@ -14,6 +14,30 @@ $(function () {
 })
 //end of toggle menu script
 
+$(function () {
+    $('#home-click').click(function () {
+        ++menuStatus;
+        if (menuStatus % 2 === 0) {
+            $('.jsmenu-buttons-container').slideUp(100);
+        }
+        else{
+            $('.jsmenu-buttons-container').slideUp(100);
+        }
+    })
+})
+
+$(function () {
+    $('#about-click').click(function () {
+        ++menuStatus;
+        if (menuStatus % 2 === 0) {
+            $('.jsmenu-buttons-container').slideUp(100);
+        }
+        else{
+            $('.jsmenu-buttons-container').slideUp(100);
+        }
+    })
+})
+
 //script to close the webpage menu navigation box when in mobile view
 $(function () {
     $('#jsclosemenudiv').click(function () {

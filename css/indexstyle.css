@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('aboutstyle.css');
 
 *{
     margin: 0px;
@@ -24,6 +25,8 @@ a{
 body{
     min-width: 280px;
     background-color: whitesmoke;
+    background-color: #f5f5f5;
+    background-color: hsl(0, 0%, 96%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -84,6 +87,8 @@ header{
     position: fixed;
     left: 0px;
     border-bottom: 3px solid #aaaaaa;
+    border-bottom: 3px solid hsl(0, 0%, 67%);
+    border-bottom: 3px solid rgb(171, 171, 171);
     background: #fea055;
     background: hsl(27, 99%, 66%);
     background: rgb(254, 160, 82);
@@ -101,7 +106,6 @@ header nav ul{
     width: 480px;
     margin-top: -40px;
     margin-left: 80px;
-    /* background: green; */
 }
 
 header nav ul li{
@@ -115,14 +119,13 @@ header nav ul li{
     font-weight: bold;
     text-align: center;
     display: inline-block;
-    /* background: blue; */
 }
 
 header nav ul li:hover{
     color: black;
     color: #000000;
-    transition: 0.3s;
     color: hsl(0, 0%, 0%);
+    transition: 0.3s;
 }
 
 header nav ul #projectbtn{
@@ -135,6 +138,8 @@ header nav ul #contactbtn{
 
 header .header-contact-iconsdiv a:link{
     color: black;
+    color: #000000;
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
 }
 
@@ -153,13 +158,14 @@ header .header-contact-iconsdiv{
     font-size: 20px;
     position: absolute;
     left: 79%;
-    /* background: green; */
 }
 
 header .header-contact-iconsdiv i{
     padding: 8px;
     cursor: pointer;
     border: 1px solid black;
+    border: 1px solid #000000;
+    border: 1px solid hsl(0, 0%, 0%);
     border-radius: 20px;
 }
 
@@ -183,25 +189,25 @@ header #closemenudiv{
 
 .maincontent-container{
     width: 80%;
-    /* height: 100%; */
-    /* height: 50vh; */
-    height: 1800px;
+    height: 4000px;
+    position: relative;
     margin: 0px auto;
     padding-top: 120px;
     background: white;
+    background: #ffffff;
+    background: hsl(0, 0%, 100%);
     z-index: -1;
 }
 
 .maincontent-container section{
     max-width: 1000px;
     margin: 0 auto;
-    /* background-color: green; */
+    position: relative;
 }
 
 .maincontent-container section img{
     width: 350px;
     height: 400px;
-    /* background: red; */
 }
 
 section .summarytitlediv{
@@ -210,29 +216,35 @@ section .summarytitlediv{
     position: relative;
     top: -330px;
     left: 31.5%;
-    /* background: blue; */
 }
 
 section .summarytitlediv h3{
     color: #ae745C;
+    color: hsl(18, 34%, 52%);
+    color: rgb(174, 116, 91);
 }
 
 section .summarytitlediv p{
     color: #747474;
+    color: hsl(0, 0%, 45%);
+    color: rgb(115, 115, 115);
 }
 
 section .summarytitlediv .hirediv{
     width: 100%;
     margin-top: 30px;
-    /* background-color: green; */
 }
 
 section .summarytitlediv .hirediv h4{
-    color: #ae745C;
+    color: #747474;
+    color: hsl(0, 0%, 45%);
+    color: rgb(115, 115, 115);
 }
 
-section .summarytitlediv .hirediv p{
+section .summarytitlediv .hirediv a{
     color: #747474;
+    color: hsl(0, 0%, 45%);
+    color: rgb(115, 115, 115);
 }
 
 section .summarytitlediv .hirediv button{
@@ -241,22 +253,35 @@ section .summarytitlediv .hirediv button{
     border: none;
     cursor: pointer;
     color: white;
+    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
     border-radius: 5px;
-    transition: 0.2s;
     box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 10px #808080;
+    box-shadow: 0px 0px 10px hsl(0, 0%, 50%);
     background: #ae745C;
+    background: hsl(18, 34%, 52%);
+    background: rgb(174, 116, 91);
 }
 
 section .summarytitlediv .hirediv button:hover{
     box-shadow: none;
     background: #997c6e;
+    background: hsl(20, 17%, 52%);
+    background: rgb(153, 126, 112);
 }
 
 section .summarytitlediv .hirediv button:active{
     color: #ae745C;
+    color: hsl(18, 34%, 52%);
+    color: rgb(174, 116, 91);
     border: 3px solid #ae745C;
+    border: 3px solid hsl(18, 34%, 52%);
+    border: 3px solid rgb(174, 116, 91);
     background: white;
+    background: #ffffff;
+    background: hsl(0, 0%, 100%);
 }
 
 .summarytitlediv .hirediv .hirebtndiv{
@@ -274,7 +299,6 @@ section .summarytitlediv .hirediv button:active{
 
 .maincontent-container .jobsection {
     position: relative;
-    /* background-color: blue; */
     margin-top: -55px;
 }
 
@@ -286,7 +310,7 @@ section .summarytitlediv .hirediv button:active{
 .jobsection .jobdescription-container {
     width: 90%;
     margin: 0 auto;
-    /* background-color: yellow; */
+    z-index: 1;
 }
 
 .jobsection .jobdescription-container .desriptionbtnsdiv {
@@ -296,6 +320,8 @@ section .summarytitlediv .hirediv button:active{
 
 .jobsection .jobdescription-container h2 {
     color: #fea055;
+    color: hsl(27, 99%, 66%);
+    color: rgb(254, 160, 82);
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
@@ -306,19 +332,27 @@ section .summarytitlediv .hirediv button:active{
     width: 320px;
     border: none;
     color: white;
+    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     text-align: left;
     padding: 15px;
     padding-bottom: 15px;
-    line-height: 18px;
+    line-height: 16px;
     margin-right: 10px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px grey;
+    box-shadow: 0px 5px 15px #808080;
+    box-shadow: 0px 5px 15px hsl(0, 0%, 50%);
     z-index: 1;
     background-color: #fea055;
+    background-color: hsl(27, 99%, 66%);
+    background-color: rgb(254, 160, 82);
 }
 
 .jobdescription-container .desriptionbtnsdiv h4 {
     color: #747474;
+    color: hsl(0, 0%, 45%);
+    color: rgb(115, 115, 115);
     font-size: 14px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -326,14 +360,15 @@ section .summarytitlediv .hirediv button:active{
 }
 
 .jobdescription-container .desriptionbtnsdiv i {
-    color: #ae745c;
+    color: #ae745C;
+    color: hsl(18, 34%, 52%);
+    color: rgb(174, 116, 91);
     font-size: 18px;
 }
 
 .jobdescription-container .desriptionbtnsdiv p {
     overflow: hidden;
     letter-spacing: 0.6px;
-    /* background-color: red; */
 }
 
 .maincontent-container .jobsection #shape-three {
@@ -373,7 +408,6 @@ footer{
         font-size: 40px;
         position: absolute;
         left: 0px;
-        /* background: green; */
         text-align: center;
     }
 
@@ -388,7 +422,6 @@ footer{
         margin-top: -50px!important;
         position: absolute;
         left: 75%;
-        /* background: green; */
     }
     
     header nav{
@@ -416,7 +449,6 @@ footer{
         height: 40px;
         margin: 0 auto;
         display: block;
-        /* background-color: green; */
     }
 
     header nav ul #projectbtn{
@@ -436,7 +468,6 @@ footer{
         font-size: 50px;
         display: block;
         text-align: center;
-        /* background: green; */
     }
 
     header #closemenudiv i{
@@ -458,7 +489,6 @@ footer{
         top: -400px;
         left: 0;
         text-align: center;
-        /* background-color: blue; */
     }
 
     .summarytitlediv p{
@@ -479,7 +509,6 @@ footer{
         width: 100%;
         position: relative;
         top: 360px;
-        /* background-color: green; */
     }
 
     .summarytitlediv .hirediv .hirebtndiv{
@@ -504,6 +533,9 @@ footer{
         margin-right: 0px;
         margin-bottom: 30px;
         background-color: #fea055;
+        background-color: hsl(27, 99%, 66%);
+        background-color: rgb(254, 160, 82);
+        z-index: 4;
     }
 
     .maincontent-container .jobsection #shape-two, #shape-three{
@@ -520,7 +552,6 @@ footer{
     header .header-contact-iconsdiv i{
         padding: 6px;
         margin-top: 4px!important;
-        /* background: green; */
     }
 
     .maincontent-container .jobsection #shape-three {
@@ -537,18 +568,15 @@ footer{
 
     section .summarytitlediv{
         top: -330px;
-        /* background: blue; */
     }
 
     .maincontent-container section img{
         height: 350px;
-        /* background: red; */
     }
 
     .maincontent-container section #devimage-one{
         width: 100%;
         top: 450px;
-        /* background-color: green; */
     }
 
     .maincontent-container .jobsection {
@@ -559,7 +587,6 @@ footer{
 @media(max-width: 400px){
     section .summarytitlediv{
         top: -280px;
-        /* background: blue; */
     }
 
     .maincontent-container #shape-one{
@@ -569,12 +596,10 @@ footer{
 
     .maincontent-container section img{
         height: 280px;
-        /* background: red; */
     }
 
     .maincontent-container section #devimage-one{
         top: 460px;
-        /* background-color: green; */
     }
 }
 
@@ -600,20 +625,17 @@ footer{
     }
 
     .maincontent-container .jobsection #shape-three {
-        top: 780px;
+        top: 680px;
     }
 }
 
 @media(max-width: 280px){
     section .summarytitlediv{
         top: -250px;
-        /* background: blue; */
     }
 
     section .summarytitlediv .hirediv h4{
         width: 100%;
-        /* margin-top: 30px; */
-        /* background-color: green; */
     }
 
     .summarytitlediv .hirediv p{  
@@ -622,7 +644,6 @@ footer{
 
     .maincontent-container section img{
         height: 250px;
-        /* background: red; */
     }
 
     .maincontent-container section #devimage-one{
