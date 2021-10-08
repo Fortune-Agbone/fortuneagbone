@@ -102,6 +102,10 @@ header #porfolio-icondiv img{
     z-index: 1;
 }
 
+header #mobilemenudiv{
+    display: none;
+}
+
 header nav ul{
     width: 480px;
     margin-top: -40px;
@@ -190,7 +194,6 @@ header #closemenudiv{
 .maincontent-container{
     width: 80%;
     height: 4000px;
-    position: relative;
     margin: 0px auto;
     padding-top: 120px;
     background: white;
@@ -236,9 +239,9 @@ section .summarytitlediv .hirediv{
 }
 
 section .summarytitlediv .hirediv h4{
-    color: #747474;
-    color: hsl(0, 0%, 45%);
-    color: rgb(115, 115, 115);
+    color: #ae745C;
+    color: hsl(18, 34%, 52%);
+    color: rgb(174, 116, 91);
 }
 
 section .summarytitlediv .hirediv a{
@@ -279,9 +282,9 @@ section .summarytitlediv .hirediv button:active{
     border: 3px solid #ae745C;
     border: 3px solid hsl(18, 34%, 52%);
     border: 3px solid rgb(174, 116, 91);
-    background: white;
-    background: #ffffff;
-    background: hsl(0, 0%, 100%);
+    background: black;
+    background: #000000;
+    background: hsl(0, 0%, 0%);
 }
 
 .summarytitlediv .hirediv .hirebtndiv{
@@ -428,6 +431,14 @@ footer{
         display: block;
     }
 
+    header #mobilemenudiv{
+        display: block;
+    }
+
+    header #desktopmenudiv{
+        display: none;
+    }
+
     header nav ul{
         width: 100%;
         margin-top: 5px;
@@ -514,6 +525,12 @@ footer{
     .summarytitlediv .hirediv .hirebtndiv{
         margin-top: 30px;
         float: none;
+    }
+
+    section .summarytitlediv .hirediv button:active{
+        background: white;
+        background: #ffffff;
+        background: hsl(0, 0%, 100%);
     }
 
     .maincontent-container .jobsection {

@@ -14,8 +14,9 @@ $(function () {
 })
 //end of toggle menu script
 
+//script for the Home button to close the menu div
 $(function () {
-    $('#home-click').click(function () {
+    $('#jshome-click').click(function () {
         ++menuStatus;
         if (menuStatus % 2 === 0) {
             $('.jsmenu-buttons-container').slideUp(100);
@@ -25,9 +26,11 @@ $(function () {
         }
     })
 })
+//end of Home script
 
+//script for the About button to close the menu div
 $(function () {
-    $('#about-click').click(function () {
+    $('#jsabout-click').click(function () {
         ++menuStatus;
         if (menuStatus % 2 === 0) {
             $('.jsmenu-buttons-container').slideUp(100);
@@ -37,6 +40,7 @@ $(function () {
         }
     })
 })
+//end of About script
 
 //script to close the webpage menu navigation box when in mobile view
 $(function () {
