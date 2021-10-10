@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-@import url('aboutstyle.css');
+@import url('aboutsectionstyle.css');
+@import url("skills-sectionstyle.css");
 
 *{
     margin: 0px;
@@ -132,28 +133,19 @@ header nav ul li:hover{
     transition: 0.3s;
 }
 
-header nav ul #projectbtn{
+header nav ul .projectbtn{
     margin-left: 15px;
 }
 
-header nav ul #contactbtn{
+header nav ul .contactbtn{
     margin-left: 25px;
 }
 
-header .header-contact-iconsdiv a:link{
+header .header-contact-iconsdiv a{
     color: black;
     color: #000000;
     color: hsl(0, 0%, 0%);
     text-decoration: none;
-}
-
-header .header-contact-iconsdiv a:visited{
-    color: #ae745C;
-    color: #ae745C;
-    color: #ae745C;
-    border: #ae745C;
-    border: #ae745C;
-    border:#ae745C;
 }
 
 header .header-contact-iconsdiv{
@@ -193,9 +185,9 @@ header #closemenudiv{
 
 .maincontent-container{
     width: 80%;
-    height: 4000px;
-    margin: 0px auto;
-    padding-top: 120px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 120px 0px 150px 0px;
     background: white;
     background: #ffffff;
     background: hsl(0, 0%, 100%);
@@ -301,7 +293,7 @@ section .summarytitlediv .hirediv button:active{
 }
 
 .maincontent-container .jobsection {
-    position: relative;
+    /* position: relative; */
     margin-top: -55px;
 }
 
@@ -317,6 +309,7 @@ section .summarytitlediv .hirediv button:active{
 }
 
 .jobsection .jobdescription-container .desriptionbtnsdiv {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -462,11 +455,11 @@ footer{
         display: block;
     }
 
-    header nav ul #projectbtn{
+    header nav ul .projectbtn{
         margin-left: 0px;
     }
     
-    header nav ul #contactbtn{
+    header nav ul .contactbtn{
         margin-left: 0px;
     }
 

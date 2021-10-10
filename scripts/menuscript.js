@@ -14,7 +14,7 @@ $(function () {
 })
 //end of toggle menu script
 
-//script for the Home button to close the menu div
+//script for the Home menu button to close the menu div
 $(function () {
     $('#jshome-click').click(function () {
         ++menuStatus;
@@ -28,9 +28,23 @@ $(function () {
 })
 //end of Home script
 
-//script for the About button to close the menu div
+//script for the About menu button to close the menu div
 $(function () {
     $('#jsabout-click').click(function () {
+        ++menuStatus;
+        if (menuStatus % 2 === 0) {
+            $('.jsmenu-buttons-container').slideUp(100);
+        }
+        else{
+            $('.jsmenu-buttons-container').slideUp(100);
+        }
+    })
+})
+//end of About script
+
+//script for the Skills menu button to close the menu div
+$(function () {
+    $('#js-skills-click').click(function () {
         ++menuStatus;
         if (menuStatus % 2 === 0) {
             $('.jsmenu-buttons-container').slideUp(100);

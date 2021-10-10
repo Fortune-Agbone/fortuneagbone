@@ -1,0 +1,77 @@
+.maincontent-container .skills-section {
+    margin-top: 160px;
+    position: relative;
+}
+
+.maincontent-container .skills-section #shape-six{
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 25%;
+}
+
+.skills-section .skillsdiv {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-section .skillsdiv h2 {
+    color: #fea055;
+    color: hsl(27, 99%, 66%);
+    color: rgb(254, 160, 82);
+}
+
+.skillsdiv h4 {
+    color: #747474;
+    color: hsl(0, 0%, 45%);
+    color: rgb(115, 115, 115);
+    margin-top: 30px;
+}
+
+.skillsdiv .skillsbtndiv {
+    padding-right: -20px;
+}
+
+.skillsdiv .skillsbtndiv button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    color: #ffffff;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    position: relative;
+    background-color: #fea055;
+    background-color: hsl(27, 99%, 66%);
+    background-color: rgb(254, 160, 82);
+}
+
+.skillsdiv .skillsbtndiv button i {
+    font-size: 25px;
+}
+
+.skillsdiv .skillsbtndiv button img{
+    width: 150px;
+    height: 21.5px;
+    position: relative;
+    top: 2px;
+}
+
+.skillsdiv .skillsbtndiv .animakerbtn{
+    padding-left: 20px;
+}
+
+.skillsdiv .skillsbtndiv button #animaker-logo{
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    top: -1px;
+    left: 10px;
+}

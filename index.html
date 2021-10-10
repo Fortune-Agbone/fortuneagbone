@@ -37,13 +37,13 @@
                     <a href="#about">
                         <li>About</li>
                     </a>
-                    <a>
+                    <a href="#skills">
                         <li>Skills</li>
                     </a>
-                    <span id="projectbtn"><a>
+                    <span class="projectbtn"><a>
                             <li>Projects</li>
                         </a></span>
-                    <span id="contactbtn">
+                    <span class="contactbtn">
                         <a>
                             <li>Contact</li>
                         </a>
@@ -59,13 +59,13 @@
                     <a id="jsabout-click" href="#about">
                         <li>About</li>
                     </a>
-                    <a>
+                    <a id="js-skills-click" href="#skills">
                         <li>Skills</li>
                     </a>
-                    <span id="projectbtn"><a>
+                    <span class="projectbtn"><a>
                             <li>Projects</li>
                         </a></span>
-                    <span id="contactbtn">
+                    <span class="contactbtn">
                         <a>
                             <li>Contact</li>
                         </a>
@@ -76,8 +76,9 @@
         </nav>
 
         <div class="header-contact-iconsdiv">
-            <a href="https://twitter.com/Agbone_" target="_blank" title="Twitter Profile Link"><i class="fab fa-twitter"></i></a>
-            <a><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/Agbone_" target="_blank" title="Twitter Profile Link"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://wa.link/14rsx3" target="blank_" title="WhatsApp Link"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:fortuneagbone@gmail.com" title="Email Address Link"><i class="fas fa-envelope"></i></a>
         </div>
     </header>
@@ -100,11 +101,11 @@
 
                 <div class="hirediv">
                     <h4>Email
-                        <p><a href="mailto:fortuneagbone@gmail.com">fortuneagbone@gmail.com</a></p>
+                        <p><a href="mailto:fortuneagbone@gmail.com" title="Email Address">fortuneagbone@gmail.com</a></p>
                     </h4>
 
                     <div class="hirebtndiv">
-                        <a href="mailto:fortuneagbone@gmail.com" title="Email Me">
+                        <a href="mailto:fortuneagbone@gmail.com" title="Email Link">
                             <button>Hire Me</button>
                         </a>
                     </div>
@@ -156,7 +157,7 @@
                 </div>
             </div>
 
-            <img id="shape-three" src="images/shapesvgs/shape3.svg" alt="Shape Threw" />
+            <img id="shape-three" src="images/shapesvgs/shape3.svg" alt="Shape Three" />
         </section>
         <!--end of Job Description html-->
 
@@ -195,7 +196,7 @@
                         </p>
 
                         <br />
-                        <h3>How about A Motion Graphics Animator/Product Presentation Organizer??</h3>
+                        <h3>How about A Motion Graphics Animator or a Video/Product Presentation Organizer??</h3>
 
                         <h4>Still Your Plug!!</h4>
 
@@ -214,13 +215,22 @@
                         </p>
 
                         <br />
-                        <h4>Here's a video to illustrate:</h4>
+                        <h4>Here's a video to illustrate (2D Animation):</h4>
 
                         <br />
 
-                        <video poster="images/animation.png" preload="auto" controls>
-                            <source src="animation.mp4" />
-                            <source src="animation.webm" type='video/mp4;codecs="vp8, vorbis"' />
+                        <video poster="images/videoposters/animation.png" preload="auto" controls>
+                            <source src="videos/animation.mp4" />
+                            <source src="videos/animation.webm" type='video/webm;codecs="vp8, vorbis"' />
+                        </video>
+
+                        <br /><br />
+                        <h4>And another (Video Editing/Manipulation):</h4>
+
+                        <br />
+                        <video poster="images/videoposters/videoedit.png" preload="auto" controls>
+                            <source src="videos/videoediting.mp4" />
+                            <source src="videos/videoediting.webm" type='video/webm;codecs="vp8, vorbis"' />
                         </video>
 
                         <br /><br />
@@ -244,6 +254,14 @@
                         <br />
 
                         <h3>You Can Also Check Out My Work On</h3>
+
+                        <div  id="skills" class="work-accountsdiv">
+                            <a href="https://github.com/Fortune-Agbone" target="blank_" title="Github Profile Link"><span class="github-span"><i
+                                        class="fab fa-github-square"></i> Github</span></a>
+
+                            <a href="https://www.linkedin.com/in/fortune-agbone" target="blank_" title="LinkedIn Profile Link"><span
+                                    class="linkedin-span"><i class="fab fa-linkedin"></i> LinkedIn</span></a>
+                        </div>
                     </aside>
                 </div>
             </section>
@@ -251,6 +269,37 @@
             <img id="shape-four" src="images/shapesvgs/shape4.svg" alt="Shape Four" />
         </div>
         <!--end of About Me html -->
+
+        <!--html for My Skills section-->
+        <div class="skills-section">
+            <section>
+                <img id="shape-six" src="images/shapesvgs/shape6.svg"  alt="Shape Six" />
+                
+                <div class="skillsdiv">
+                    <h2>MY SKILLS</h2>
+
+                    <h4>At the heart of it, here's my current skill set at a glance</h4>
+
+                    <div class="skillsbtndiv">
+                        <button><i class="fab fa-html5"></i> HTML</button>
+                        <button><i class="fab fa-css3-alt"></i> CSS</button>
+                        <button><i class="fab fa-js-square"></i> JS</button>
+                        <button><i class="fab fa-git-square"></i> Git</button>
+                    </div>
+
+                    <h4>Technologies I Have Worked With</h4>
+
+                    <div class="skillsbtndiv">
+                        <button><i class="fab fa-php"></i> PHP</button>
+                        <button><img src="images/techlogos/jquery.svg" alt="JQuery" /></button>
+                        <button><img src="images/techlogos/mysql.svg" alt="MySQL" /></button>
+                        <button><i class="fab fa-figma"></i> Figma</button>
+                        <button class="animakerbtn"><img id="animaker-logo" src="images/techlogos/animaker.svg" alt="Animaker" /> Animaker</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--end of My Skills section html-->
     </div>
 
     <footer>
