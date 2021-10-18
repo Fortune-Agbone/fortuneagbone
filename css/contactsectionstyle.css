@@ -1,0 +1,60 @@
+.contact-sectiondiv {
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.contact-sectiondiv h2 {
+    color: #fea055;
+    color: hsl(27, 99%, 66%);
+    color: rgb(254, 160, 82);
+}
+
+.contact-sectiondiv h4{
+    color: grey;
+    margin-top: 30px;
+}
+
+.contact-sectiondiv .contact-section-iconsdiv {
+    margin-top: 20px;
+}
+
+.contact-sectiondiv i {
+    font-size: 20px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-left: 4px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.contact-sectiondiv .fa-twitter{
+    color: #1da1f2;
+}
+
+.contact-sectiondiv .fa-whatsapp{
+    color: #7deb7e;
+}
+
+.contact-sectiondiv .fa-github-square{
+    color: #6e5494;
+    color: hsl(264, 28%, 45%);
+    color: rgb(108, 83, 147);
+}
+
+.contact-sectiondiv .fa-linkedin{
+    color: #006192;
+    color: hsl(200, 100%, 29%);
+    color: rgb(0, 99, 148);
+}
+
+.contact-sectiondiv h3{
+    margin-top: 50px;
+}
+
+@media(max-width: 500px){
+    .contact-sectiondiv h3{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+}

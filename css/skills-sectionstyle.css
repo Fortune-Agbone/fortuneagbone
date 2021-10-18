@@ -15,6 +15,7 @@
     margin: 0 auto;
     text-align: center;
     position: relative;
+    top: -50px;
     z-index: 1;
 }
 
